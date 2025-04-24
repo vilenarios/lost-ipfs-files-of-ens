@@ -1,0 +1,22 @@
+{
+    "name": "lost-ipfs-files-of-ens",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "fetch": "ts-node-esm scripts/fetchEnsWithIpfs.ts",
+        "check": "ts-node-esm scripts/checkIpfsAvailability.ts",
+        "serve": "live-server dashboard"
+    },
+    "dependencies": {
+        "content-hash": "^2.5.2",
+        "dotenv": "^16.4.7",
+        "ethers": "^6.13.5",
+        "graphql-request": "^6.1.0",
+        "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    }
+}
